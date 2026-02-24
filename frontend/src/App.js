@@ -1,6 +1,7 @@
 import React from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import LoginPage from "@/pages/LoginPage";
 import SetupPage from "@/pages/SetupPage";
 import HubPage from "@/pages/HubPage";
@@ -43,6 +44,7 @@ function App() {
       <BrowserRouter>
         <AppRouter />
       </BrowserRouter>
+      <SpeedInsights />
     </div>
   );
 }
