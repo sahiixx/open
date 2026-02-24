@@ -10,6 +10,7 @@ import ModelComparePage from "@/pages/ModelComparePage";
 import AnalyticsPage from "@/pages/AnalyticsPage";
 import PlaygroundPage from "@/pages/PlaygroundPage";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/react";
 
 // REMINDER: DO NOT HARDCODE THE URL, OR ADD ANY FALLBACKS OR REDIRECT URLS, THIS BREAKS THE AUTH
 
@@ -43,6 +44,7 @@ function App() {
       <BrowserRouter>
         <AppRouter />
       </BrowserRouter>
+      <Analytics />
     </div>
   );
 }
